@@ -1,0 +1,44 @@
+Instructions for Running the Data Extraction and NLP Script
+
+1. Prerequisites:
+- Python 3.11.5 installed on your system.
+- Ensure you have the following libraries installed:
+  - pandas
+  - requests
+  - BeautifulSoup (bs4)
+  - nltk
+  - textblob
+  - textstat
+
+2. Installation of Required Libraries:
+- Open your command line interface (CLI).
+- Install the required libraries using pip: pip install pandas requests beautifulsoup4 nltk textblob textstat
+
+3. Download Required Files:
+- Download the following files from the submission:
+- Input.xlsx: Contains the list of URLs and other input variables.
+- MasterDictionary/positive-words.txt: List of positive words for sentiment analysis.
+- MasterDictionary/negative-words.txt: List of negative words for sentiment analysis.
+- StopWords folder: Contains stopwords text files used for text cleaning.
+
+4. Approach to Solution:
+- The Python script (main.py) uses pandas for data handling, requests for fetching web content, BeautifulSoup for HTML parsing, and various NLTK and TextBlob functionalities for text analysis.
+- The script reads the input URLs from Input.xlsx, extracts article text from each URL, performs text analysis, and computes the required variables as per the output structure defined in "Output Data Structure.xlsx".
+
+5. Run the Python Script:
+- Place all downloaded files in the same directory as the Python script (main.py).
+- Open your CLI and navigate to the directory containing main.py.
+- Run the script using the following command: python main.py
+
+6. Output File:
+- Once the script finishes running, it will generate an output_analysis.csv file in the same directory.
+- This CSV file contains the computed variables as per the output structure defined in "Output Data Structure.xlsx".
+
+7. Troubleshooting:
+- If you encounter any errors related to missing libraries or dependencies, ensure you have installed all required libraries as mentioned in step 2.
+- Verify that all input files are placed in the correct directory and have the correct file names.
+
+8. Additional Notes:
+- The script may take some time to run depending on the number of URLs and the processing power of your system.
+- For any further assistance or queries, please reach out at mahavirsodha645@gmail.com
+
